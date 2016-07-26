@@ -1,5 +1,5 @@
 <div ng-include="'views/nav.html'" />
-<section class="layout-container width-fixed">
+<section class="layout-container width-fluid">
 
 <div class="row border1" role="row" ng-repeat="row in layout.rowCount track by $index">
     <div ng-repeat="col in layout.colCount[$index] track by $index" class="col-sm-{{col}} border1" role="col">

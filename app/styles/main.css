@@ -51,14 +51,18 @@ body {
 
 /*side bar css*/
 .side-bar{
-    position: absolute;
-    left: 0;
+    position: fixed;
+    bottom: 0;
     z-index: 1;
-    background: #fff;
+    background: #333;
+    width:100%;
 }
 
 .side-bar ul{
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
 }
 
 .side-bar li {
@@ -67,9 +71,16 @@ body {
 
 .side-bar .nav-comp{
     width: 100px;
-    border:1px solid #ccc;
     padding: 10px;
     text-align: center;
+    color:#fff;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.side-bar .nav-comp:hover{
+    color: aqua;
 }
 
 .side-bar .nav-comp i{

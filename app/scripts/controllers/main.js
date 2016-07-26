@@ -16,7 +16,7 @@ angular.module('genUiApp')
             defaultWidth : '100%',
             defaultDevice : 'col-sm-',
             defaultLayout : '12'
-        }
+        };
         
         //initialize
         function _init(){
@@ -25,7 +25,7 @@ angular.module('genUiApp')
                 width : $this.config.defaultWidth,
                 layout : $this.config.defaultLayout,
                 device : $this.config.defaultDevice
-            }
+            };
             
             $this.rowCount = [];
             $this.colCount = [];
@@ -41,7 +41,7 @@ angular.module('genUiApp')
             var $layoutRatio = angular.element(e.target).attr('data-mode');
             
             console.log($layoutRatio);
-            var $ratios = ($layoutRatio.indexOf(',') != -1)?$layoutRatio.split(','):[$layoutRatio];
+            var $ratios = ($layoutRatio.indexOf(',') !== -1)?$layoutRatio.split(','):[$layoutRatio];
             /*
             $ratios.map(function(item){
                 return {id:item}
@@ -52,28 +52,28 @@ angular.module('genUiApp')
         
             
             console.log($this.colCount);
-        }
+        };
     
         //add Row
         $this.getLayout = function(){
             $this.selectedLayout = $this.selected.device+$this.selected.layout;
             return $this.selectedLayout;
-        }
+        };
         //set container width
         $this.setContainerWidth = function(){
         
-        }
+        };
         
         //set device type
         $this.setDeviceSupport = function(){
         
-        }
+        };
     
         //set layout
         $this.setLayout = function(){
             
             
-        }
+        };
         
         _init();
   });
