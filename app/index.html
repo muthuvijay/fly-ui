@@ -56,9 +56,11 @@
         
     </div>
 
-    <div>
+    <main>
+      <section class="ui-container">
         <div ng-view=""></div>
-    </div>
+      </section>
+    </main>
 
     <div class="footer">
       <div class="container">
@@ -95,6 +97,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/mainservice.js"></script>
         <!-- endbuild -->
 </body>
 </html>

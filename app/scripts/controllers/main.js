@@ -8,7 +8,7 @@
  * Controller of the genUiApp
  */
 angular.module('genUiApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function (mainService) {
     
         var $this = this;
         
